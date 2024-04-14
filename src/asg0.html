@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Asg0</title>
+</head>
+
+<body onload="main()">
+
+<div>
+    <h2>Assignment 0</h2>
+    <p><strong>Name:</strong> Leone Asatoorian</p>
+    <p><strong>Email:</strong> lasatoor@ucsc.edu</p>
+</div>
+
+<canvas id="canvas1" width="400" height="400">
+Please use a browser that supports "canvas"
+</canvas>
+<script src="asg0.js"></script>
+<script src="lib/cuon-matrix-cse160.js"></script>
+
+<br><br>
+<label for="name">v1: </label>
+x <input id="xCoord1" type="text">
+y <input id="yCoord1" type="text">
+
+<br>
+<label for="name">v2: </label>
+x <input id="xCoord2" type="text">
+y <input id="yCoord2" type="text">
+
+<br>
+<input type="button" value="Draw" onClick="handleDrawEvent()"></input>
+
+<br><br>
+<label for ="op-select">Operation:</label>
+
+    <select name="op" id="op-select">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        <option value="angle between">Angle Between</option>
+        <option value="area">Area</option>
+        <option value="magnitude">Magnitude</option>
+        <option value="normalize">Normalize</option>
+
+    </select>
+
+Scalar: <input id="scalar" type="number">
+
+<br>
+<input type="button" value="Draw" onClick="handleDrawOperationEvent()"></input>
+
+
+</body>
+</html>
+
